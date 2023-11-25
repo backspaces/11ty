@@ -1,0 +1,14 @@
+mkdir 11ty; cd 11ty; code .
+npm init -y
+npm install @11ty/eleventy --save-dev
+npx @11ty/eleventy
+echo '<!doctype html><title>Page title</title><p>Hi</p>' > index.html
+echo '# Page header' > README.md
+npx @11ty/eleventy
+npx @11ty/eleventy --serve
+
+
+
+
+git init
+git add .
